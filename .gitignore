@@ -1,0 +1,5 @@
+.idea
+.venv/
+text
+*.mp4
+.env
