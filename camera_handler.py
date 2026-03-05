@@ -1,4 +1,5 @@
 import cv2
+import numpy as np
 import os
 from dotenv import load_dotenv
 
@@ -8,7 +9,6 @@ class SkyCamera :
 
     def __init__(self) :
         capture = os.getenv("CAMERA_URL")
-
         self.camera = cv2.VideoCapture(capture)
 
     def get_frame(self) :
