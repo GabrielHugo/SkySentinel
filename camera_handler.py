@@ -8,7 +8,7 @@ load_dotenv()
 class SkyCamera :
 
     def __init__(self) :
-        capture = os.getenv("CAMERA_URL")
+        capture = os.getenv("MP4_2")
         self.camera = cv2.VideoCapture(capture)
 
     def get_frame(self) :
