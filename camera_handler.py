@@ -1,5 +1,4 @@
 import cv2
-import numpy as np
 import os
 from dotenv import load_dotenv
 
@@ -13,6 +12,7 @@ class SkyCamera :
 
     def get_frame(self) :
         ret, frame = self.camera.read()
+
         return ret, frame
 
     def release_camera(self) :
